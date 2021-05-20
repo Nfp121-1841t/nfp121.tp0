@@ -8,7 +8,7 @@
 public class A
 {
     // variables d'instance - remplacez l'exemple qui suit par le vôtre
-    private int x;
+    private static int x;
 
     /**
      * Constructeur d'objets de classe A
@@ -25,9 +25,13 @@ public class A
      * @param  y   le paramètre de la méthode
      * @return     la somme de x et de y
      */
-    public int sampleMethod(int y)
+    public static int sampleMethod(int y)
     {
         // Insérez votre code ici
         return x + y;
+    }
+    public static void main (String [] args){
+        int test = sampleMethod(5);
+        System.out.print(test);
     }
 }
